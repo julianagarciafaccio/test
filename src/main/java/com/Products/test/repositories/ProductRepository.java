@@ -1,6 +1,6 @@
 package com.Products.test.repositories;
 
-import com.Products.test.domain.Product;
+import com.Products.test.domain.product.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
