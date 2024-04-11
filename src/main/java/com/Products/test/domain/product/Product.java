@@ -22,7 +22,7 @@ public class Product implements Serializable {
     @ManyToMany
     @JoinTable(name="tb_product_category", joinColumns = @JoinColumn(name ="product_name" , referencedColumnName = "name") , inverseJoinColumns = @JoinColumn(name ="category_name" , referencedColumnName = "name"))
     private Set<Category> categories = new HashSet<>();
-
+    public Product(){}
     public Product(ProductRequestDTO prodto){
 
     }

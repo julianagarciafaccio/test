@@ -21,12 +21,12 @@ public class User implements UserDetails {
     @GeneratedValue(strategy = GenerationType.UUID)
     private String id;
     private String login;
-    private String passwork;
+    private String password;
     private UserRole role;
 
     public User(String login, String passwork, UserRole role) {
         this.login = login;
-        this.passwork = passwork;
+        this.password = passwork;
         this.role = role;
     }
 
